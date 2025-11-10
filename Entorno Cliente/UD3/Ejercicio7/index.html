@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Próximos Días</title>
+    <style>
+        #form-dias,h1 {
+            text-align: center;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+        <h1>Próximos Días</h1>
+        <p>
+            Programa que calcula los próximos días en base al día de la semana que le pases y la cantidad de días que quieras. 
+            Es decir, si seleccionas Domingo, y 3, te mostrará los siguientes 3 Domingos con su fecha.
+        </p>
+
+        <form action="#" id="form-dias">
+            <label for="dias">Día Semana:</label>
+            <br/>
+            <select name="semana[]" id="dias" multiple size="7">
+                <option value="Lunes">Lunes</option>
+                <option value="Martes">Martes</option>
+                <option value="Miércoles">Miércoles</option>
+                <option value="Jueves">Jueves</option>
+                <option value="Viernes">Viernes</option>
+                <option value="Sábado">Sábado</option>
+                <option value="Domingo">Domingo</option>
+            </select>
+            <br/><br/>
+            <label for="numDias">Número de días a mostrar:</label>
+            <br/>
+            <input type="number" id="numDias" name="numDias" min="1">
+            <br><br>
+            <button type="button" onclick="mostrarProximosDias()">Mostrar próximos días</button>
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>
