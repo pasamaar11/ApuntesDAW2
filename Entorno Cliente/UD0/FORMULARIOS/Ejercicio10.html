@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 10</title>
+    </head>
+    <body>
+        <form action="#">
+            <label for="name">Nombre: </label>
+            <input type="text" id="name" name="nombre" placeholder="Escribe tu nombre" required><br/>
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email" placeholder="ejemplo@correo.com" required><br/><br/>
+
+            <p>Estudios: </p>
+            <input type="radio" id="eso" name="estudios" value="ESO">
+            <label for="eso">ESO</label>
+            <input type="radio" id="bachiller" name="estudios" value="Bachiller">
+            <label for="bachiller">Bachiller</label>
+            <input type="radio" id="fp" name="estudios" value="FP">
+            <label for="fp">FP</label><br><br>
+
+            <p>Colores favoritos</p>
+            <select name="colores[]" id="colores" multiple size="4">
+                <option value="Rojo">Rojo</option>
+                <option value="Azul">Azul</option>
+                <option value="Verde">Verde</option>
+                <option value="Amarillo">Amarillo</option>
+            </select><br/>
+
+            <p>Comentarios:</p>
+            <textarea rows="2" cols="20" placeholder="Escribe aquí tus comentarios..."></textarea><br/><br/>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,138 @@
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+}
+
+/* Header y navegación */
+header {
+    text-align: center;
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    color: #fff;
+    padding: 5px 0 10px; /* Menos espacio */
+    min-height: 140px;/* Antes era 220px, ahora mucho más bajo */
+}
+
+header h1 {
+    margin: 5px 0;
+    font-size: 24px; /* Tamaño reducido */
+    font-family: 'BBH Sans Bogle', static /*fuente de Google importada desde enlaces en el head del HTML*/
+}
+
+header h2 {
+    margin: 0 0 5px;
+    font-size: 14px; /* Tamaño más pequeño */
+    font-weight: normal;
+}
+
+header img {
+    display: block;
+    margin: 5px auto;
+    max-height: 60px; /* Imagen más pequeña */
+}
+
+/* Menú */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,0.8);
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 15px; /* Menos alto */
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px; /* Texto más pequeño */
+    transition: background 0.3s ease;
+}
+
+nav ul li:hover {
+    background: #eca023;
+}
+
+/* Espacio para el contenido debajo del header */
+main {
+    margin-top: 160px; /* Antes era 240px, ahora menor para header más bajo */
+}
+
+/* Sección Sobre nosotros */
+#aboutUs {
+    background-color: #8ecae6;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#aboutUs h3 {
+    text-align: center;
+}
+
+#img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+section h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section p, section ol {
+    line-height: 1.5;
+}
+
+#Carta{
+    background-color: #c2d6d6;
+}
+
+#Bebidas{
+    background-color: #023047;
+    color: white;
+}
+
+#Reservas{
+    background-color: #ed4f68;
+    
+}
+
+#Contacto{
+    background-color: #8ecae6;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        text-align: center;
+    }
+    body {
+        padding: 0 10px;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registro al Curso en Línea</title> 
+    </head>
+    <body>
+        <h1>Registro al Curso en Línea</h1>
+        <h2>Bienvenido al Formulario de registro para el curso en línea</h2>
+        <form action="#">
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <label for="name">Nombre Completo: </label>
+                <input type="text" id="name" name="nombre" placeholder="Ej: Juan Pérez" required><br><br>
+
+                <label for="correo">Correo Electrónico: </label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required><br><br>
+
+                <label for="tlf">Número de teléfono: +34</label>
+                <input type="tel" id="tlf" name="telefono" pattern="[0-9]{9}" placeholder="9 dígitos"><br><br>
+
+                <label for="nacimiento">Fecha de nacimiento: </label>
+                <input type="date" id="nacimiento" name="nacimiento">
+            </fieldset>
+
+            <fieldset>
+                <legend>Información Académica</legend>
+
+                <label for="estudios">Nivel de estudios:</label>
+                <select name="estudios" id="estudios">
+                    <option value="ESO">Secundaria</option>
+                    <option value="Bach">Bachillerato</option>
+                    <option value="Uni">Universidad</option>
+                    <option value="Posgrado">Posgrado</option>
+                </select><br/><br/>
+
+                <p>Áreas de interés:</p>
+                <label><input type="checkbox" name="intereses" value="programacion"> Programación</label>
+                <label><input type="checkbox" name="intereses" value="dweb"> Diseño Web</label>
+                <label><input type="checkbox" name="intereses" value="bbdd"> Bases de Datos</label>
+                <label><input type="checkbox" name="intereses" value="AI"> Inteligencia Artificial</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferencias de curso</legend>
+
+                <p>Modalidad:</p>
+                <label><input type="radio" name="modalidad" value="online"> En línea</label>
+                <label><input type="radio" name="modalidad" value="presencial"> Presencial</label>
+                <label><input type="radio" name="modalidad" value="hibrido"> Híbrido</label><br/><br/>
+
+                <label for="fotoperfil">Foto de perfil:</label>
+                <input type="file" id="fotoperfil" name="fotoperfil"><br/><br/>
+
+                <label for="comentarios">Comentarios o expectativas:</label><br/>
+                <textarea id="comentarios" name="comentarios" rows="5" cols="40" placeholder="Escribe aquí tus expectativas..."></textarea>
+            </fieldset>
+
+            <br/>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reiniciar">
+        </form>
+    </body>
+</html>

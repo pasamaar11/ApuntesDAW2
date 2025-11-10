@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="./ejercicios.js"></script>
+    </head>
+    <body>
+        <p>La longitud de la cadena de texto "A la gente de Zaragoza se les llama “maños” Nacimos en los 70’s A la gente de Zaragoza se les llama “maños” nacimos en los 70´s es: </p>
+        <p id="demo"></p>
+        <script>
+            let frase = 'A la gente de Zaragoza se les llama “maños” Nacimos en los 70’s A la gente de Zaragoza se les llama “maños” nacimos en los 70´s'
+
+            console.log(frase)
+            document.getElementById("demo").innerHTML = frase.length;
+            let fondo = cambioColorFondo()
+
+            let ejemplo = "Línea 1\nLínea 2\t→ Aquí hay una tabulación.\nComillas: \"Hola\" y barra invertida: \\";
+            let unicode = "Corazón: \u2665  Cara sonriente: \u263A";
+            
+            console.log(ejemplo);
+            console.log(unicode);
+        </script>
+    </body>
+</html>
