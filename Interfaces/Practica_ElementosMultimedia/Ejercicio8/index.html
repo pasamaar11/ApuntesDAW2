@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Diseño Adaptativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ejemplo de diseño adaptativo con imágenes</h1>
+    </header>
+
+    <section>
+        <h2>Imagen decorativa con &lt;picture&gt;</h2>
+        <picture>
+            <!-- Imagen para escritorio -->
+            <source media="(min-width: 1024px)" srcset="./images/imagen-grande.jpg">
+            <!-- Imagen por defecto (móvil) -->
+            <img src="./images/imagen-pequena.jpg" alt="Imagen decorativa adaptativa">
+        </picture>
+    </section>
+
+    <section>
+        <h2>Sección con fondo adaptativo</h2>
+        <p>Esta sección cambia su fondo según el tamaño de pantalla.</p>
+    </section>
+</body>
+</html>
