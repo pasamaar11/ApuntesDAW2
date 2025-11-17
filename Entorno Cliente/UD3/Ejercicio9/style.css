@@ -22,4 +22,6 @@ div{
 
 #ganador{
     background-color: red;
+    padding: 30px;
+    font-size: 30px;
 }
