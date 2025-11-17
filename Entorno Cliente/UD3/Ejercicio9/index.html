@@ -2,23 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Sorteo</title>
-    <style>
-        #div{
-            text-align: center;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteo de Alumnos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="div">
-        <h1>Sorteo</h1>
-        <p id="display">0 segundos</p>
+    <h1>Sorteo DAWEC</h1>
+    <div id="lista-alumnos"></div>
+    <button id="boton-sorteo">SORTEO</button>
 
-        <button onclick="cronometrar()">Empezar</button>
-        <button onclick="pararCronometro()">Parar</button>
-        <br/>
-        <button onclick="reiniciarCronometro()">Reiniciar</button>
-        <script src="code.js"></script>
-    </div>
+    <script src="code.js"></script>
 </body>
 </html>

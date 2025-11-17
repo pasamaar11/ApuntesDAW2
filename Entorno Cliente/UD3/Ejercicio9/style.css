@@ -1,0 +1,34 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#lista-alumnos {
+    margin-bottom: 20px;
+}
+
+.alumno {
+    border: 1px solid #333;
+    padding: 8px;
+    margin: 4px auto;
+    width: 250px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.elegido {
+    background-color: black;
+    color: white;
+}
+
+.ganador {
+    background-color: red;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
