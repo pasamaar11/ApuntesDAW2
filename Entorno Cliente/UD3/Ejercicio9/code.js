@@ -18,6 +18,7 @@ function sorteoAlumnos() {
     document.getElementById("ganador").textContent = "Ganador del sorteo: " + ganador;
 
     // Eliminar ganador del array
+    //El splice elimina el primer parametro, el segundo parametro  sirve para decirle cuantos elementos eliminamos desde el primer elemento
     listaAlumnos.splice(indiceGanador, 1);
     if (listaAlumnos.length === 0) {
         alert("No hay más alumnos para sortear.");
