@@ -1,22 +1,28 @@
 .calculator{
-        background-color: rgb(3, 49, 43);
-        padding: 20px;
-        display: inline-block;
-    }
+    background-color: rgb(173, 172, 172);
+    padding: 30px;
+    display: inline-block;
+    border-bottom: 1px;
+    border: 1px solid;
+}
 
-    .buttons button{
-        width: 60px;      
-        height: 60px;
-        font-size: 24px;
-        margin: 5px;
-        border-radius: 8px;
-    }
+.buttons button{
+    width: 60px;      
+    height: 60px;
+    font-size: 24px;
+    margin: 5px;
+    border-radius: 8px;
+}
 
-    .display{
-        width: 260px;
-        height: 50px;
-        font-size: 28px;
-        margin-bottom: 10px;
-        text-align: right;
-        padding-right: 10px;
-    }
+.display{
+    width: 260px;
+    height: 50px;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.operator{
+    background-color: orange;
+}

@@ -3,49 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora PRO - DWEC</title>
+    <title>Ejercicio 11</title>
+    <script src= "code.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Calculadora básica</h1>
+    <div class="calculator">
+        <input type="text" class="display" id = "display" disabled>
+        <div class="buttons">
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button class="operator" onclick="setOperator('+')">+</button>
+            <br/>
 
-    <div class="calculadora-grid">
-        <!-- El visor donde se muestran los números y resultados -->
-        <div class="visor">
-            <div id="visor-secundario" class="visor-secundario"></div>
-            <div id="visor-principal" class="visor-principal">0</div>
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button class="operator" onclick="setOperator('-')">-</button>
+            <br/>
+
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button class="operator" onclick="setOperator('*')">*</button>
+            <br/>
+
+            <button class="operator" onclick="clearDisplay()">C</button>
+            <button onclick="appendNumber('0')">0</button>
+            <button class="operator" onclick="calculate()" class="equals"> = </button>
+            <button class="operator" onclick="setOperator('/')">/</button>
+            <br/>
+            
+            <button class="operator" onclick="calculateSqrt()">√</button>
         </div>
-
-        <!-- Botonera de la calculadora -->
-        <!-- Fila 1: Botones de control y operaciones -->
-        <button id="btn-ayuda" class="btn-control">AYUDA</button>
-        <button id="btn-info" class="btn-control">INFO</button>
-        <button id="btn-borrar" class="btn-operacion">C</button>
-        <button data-operador="/" class="btn-operacion">÷</button>
-
-        <!-- Fila 2: Números y operación -->
-        <button data-numero="7" class="btn-numero">7</button>
-        <button data-numero="8" class="btn-numero">8</button>
-        <button data-numero="9" class="btn-numero">9</button>
-        <button data-operador="*" class="btn-operacion">x</button>
-
-        <!-- Fila 3: Números y operación -->
-        <button data-numero="4" class="btn-numero">4</button>
-        <button data-numero="5" class="btn-numero">5</button>
-        <button data-numero="6" class="btn-numero">6</button>
-        <button data-operador="-" class="btn-operacion">-</button>
-
-        <!-- Fila 4: Números y operación -->
-        <button data-numero="1" class="btn-numero">1</button>
-        <button data-numero="2" class="btn-numero">2</button>
-        <button data-numero="3" class="btn-numero">3</button>
-        <button data-operador="+" class="btn-operacion">+</button>
-
-        <!-- Fila 5: Cero y botón de igual -->
-        <button data-numero="0" class="btn-numero btn-cero">0</button>
-        <button id="btn-igual" class="btn-operacion">=</button>
     </div>
-
-    <!-- Enlazamos el script al final del body para asegurar que el DOM esté cargado -->
-    <script src="code.js"></script>
 </body>
 </html>
