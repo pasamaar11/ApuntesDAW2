@@ -9,9 +9,9 @@
     <h1>Cálculo de la nómina</h1>
     <form id = "datos">
         <label for="salarioB">Salario bruto anual: </label>
-        <input type="text" id = "salarioB" name="salario">
+        <input type="number" id = "salarioB" name="salario">
         <br/>
-        <label for="retencion">Retención: </label>
+        <label for="retencion">Retención (%): </label>
         <input type = "number" min = "0" max="100" id = "retencion" name = "retencion">
         <br/>
         <label for = "npagas">Número de pagas: </label>
@@ -20,5 +20,6 @@
 
         <button type="button" id="generar">Generar salario neto mensual</button>
     </form>
+    <script src = "code.js"></script>
 </body>
 </html>
