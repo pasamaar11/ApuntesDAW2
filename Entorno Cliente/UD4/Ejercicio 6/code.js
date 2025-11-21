@@ -15,6 +15,7 @@ function esFijo(numero) {
         return true;
     }
 }
+
 function validacionMensaje(){
     const valor =  inputTlf.value;
 
@@ -27,4 +28,5 @@ function validacionMensaje(){
     }
 }
 
+// Este metodo se lanza la función validacionMensaje una vez clicas en el botón (colocado en html)
 validar.addEventListener('click', validacionMensaje);
