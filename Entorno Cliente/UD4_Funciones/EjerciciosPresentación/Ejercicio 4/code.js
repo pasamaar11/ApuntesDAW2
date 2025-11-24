@@ -6,12 +6,12 @@ var mediaB = 0;
 
 function media(){
     for (let i = 0;i < numerosA.length;i++){
-        numerosA[i] = Number(prompt("Escribe 3 numeros"));
+        numerosA[i] = Number(prompt("Escriba un número (3 en total)"));
         mediaA += numerosA[i];
     }
 
     for (let j = 0;j < numerosB.length;j++){
-        numerosB[j] = Number(prompt("Escribe 6 numeros"));
+        numerosB[j] = Number(prompt("Escriba 1 número (6 en total)"));
         mediaB += numerosB[j];
     }
 
