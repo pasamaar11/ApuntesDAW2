@@ -9,7 +9,7 @@ public class Ejercicio1 {
 		int num;
 		int[] numeros = new int[5];
 
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < numeros.length; i++) {
 			do {
 				System.out.println("Escribe número entre -10 y 10");
 				num = teclado.nextInt();
@@ -17,16 +17,16 @@ public class Ejercicio1 {
 			numeros[i] = num;
 		}
 
-		System.out.println("Array original: " + Arrays.toString(numeros));
-		Arrays.sort(numeros);
-		System.out.println("Array ordenado: " + Arrays.toString(numeros));
-
 		int sumaMultiplos = 0;
 		for (int numeroActual : numeros) {
 			if (numeroActual % 3 == 0) {
 				sumaMultiplos += numeroActual;
 			}
 		}
+
+		System.out.println("Array original: " + Arrays.toString(numeros));
+		Arrays.sort(numeros);
+		System.out.println("Array ordenado: " + Arrays.toString(numeros));
 		System.out.println("Suma de los múltiplos de 3: " + sumaMultiplos);
 		teclado.close();
 	}
