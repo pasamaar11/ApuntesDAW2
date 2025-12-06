@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <h1>Gestión de usuarios</h1>
+    <div id="formulario-user">
+        <fieldset>
+            <legend>Datos de usuario</legend>
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre">
+            <br/>
+            <label for="apellidos">Apellidos: </label>
+            <input type="text" name="apellidos" id="apellidos">
+            <br/>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email">
+            <br/>
+            <label for="usuario">Nombre de usuario: </label>
+            <input type="text" name="usuario" id="usuario" placeholder="Entre 5 y 8 caracteres.">
+            <br/>
+            <label for="dni">DNI: </label>
+            <input type="text" name= "dni" id="dni">
+            <br/>
+
+            <div id="mensaje-usuario" class="mensaje"></div>
+            <button id="btn-habilitar-banco" disabled>Habilitar banco</button>
+        </fieldset>
+    </div>
+
+    <h1>Gestión bancaria</h1>
+    <div id="formulario-banco">
+        <fieldset>
+            <legend>Datos bancarios</legend>
+            <label for="iban">IBAN: </label>
+            <input type="text" name="iban" id="iban" placeholder="ES + 2 números">
+            <br/>
+            <label for="ccc">CCC: </label>
+            <input type="text" name="ccc" id="ccc" placeholder="20 números">
+            <br/>
+            <label for="contrasenia">Contraseña: </label>
+            <input type="password" name="contrasenia" id="contrasenia">
+            
+            <div id="mensaje-banco" class="mensaje"></div>
+            <button id="btn-enviar" disabled>Enviar: </button>
+        </fieldset>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
