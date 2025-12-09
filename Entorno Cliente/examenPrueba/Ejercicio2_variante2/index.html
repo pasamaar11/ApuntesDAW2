@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro Curso Online</title>
+</head>
+<body>
+
+    <h1>Registro al Curso</h1>
+
+    <!-- DATOS DEL ESTUDIANTE -->
+    <fieldset>
+        <legend>Datos del Estudiante</legend>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre">
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido">
+
+        <label for="email">Email:</label>
+        <input type="text" id="email">
+
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario">
+
+        <label for="idAlumno">ID Alumno:</label>
+        <input type="text" id="idAlumno">
+
+        <button id="btnHabilitar">Habilitar matrícula</button>
+
+        <p id="msgDatos" class="mensaje"></p>
+    </fieldset>
+
+    <br>
+
+    <!-- DATOS DE MATRÍCULA -->
+    <fieldset>
+        <legend>Matrícula del Curso</legend>
+
+        <label for="codigoCurso">Código del Curso:</label>
+        <input type="text" id="codigoCurso">
+
+        <label for="nivel">Nivel:</label>
+        <input type="text" id="nivel">
+
+        <label for="claveAcceso">Clave de acceso:</label>
+        <input type="password" id="claveAcceso">
+
+        <button id="btnEnviar" disabled>Enviar</button>
+
+        <p id="msgMatricula" class="mensaje"></p>
+    </fieldset>
+
+    <script src="code.js"></script>
+
+</body>
+</html>
