@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Equipos Aleatorios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Generador de Equipos Aleatorios</h1>
+        <p>Introduce los datos para formar el "Equipo Piloto" de manera aleatoria.</p>
+
+        <!-- Nombre del equipo -->
+        <div class="form-group">
+            <label for="nombreEquipo">Nombre del equipo:</label>
+            <input type="text" id="nombreEquipo" placeholder="Ej: EquipoA" maxlength="20">
+            <small class="error" id="errorNombre"></small>
+        </div>
+
+        <!-- Total de alumnos -->
+        <div class="form-group">
+            <label for="totalAlumnos">Número total de alumnos en clase:</label>
+            <input type="text" id="totalAlumnos" placeholder="Ej: 25" min="1" step="1">
+            <small class="error" id="errorTotal"></small>
+        </div>
+
+        <!-- Miembros del equipo -->
+        <div class="form-group">
+            <label for="miembrosEquipo">Alumnos para el Equipo Piloto:</label>
+            <input type="text" id="miembrosEquipo" placeholder="Ej: 5" min="1" step="1">
+            <small class="error" id="errorMiembros"></small>
+        </div>
+
+        <button id="btnGenerar" disabled>Generar Equipo</button>
+
+        <div id="resultado">
+            <!-- Aquí se mostrarán los resultados de la generación -->
+        </div>
+    </main>
+
+    <script src="code.js"></script>
+</body>
+</html>
